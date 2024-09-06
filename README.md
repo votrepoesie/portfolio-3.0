@@ -1,2 +1,3 @@
 # portfolio-3.0
- as we all know, third time is the charm
+ third time is quite possibly the charm
+![cartoon me](<images/test.png>)
