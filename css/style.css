@@ -1,0 +1,131 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #BCBCBC;
+    --accent: #D6BDFF;
+}
+
+body {
+    background: var(--black);
+    margin: 0;
+}
+
+/* ---------------------- fonts ---------------------- */
+/* case study header section */
+h1 {
+    font-family: 'Jost', sans-serif;
+    font-size: 108px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--white);
+}
+
+/* homepage hero */
+h2 {
+    font-family: 'Jost', sans-serif;
+    font-size: 54px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--white);
+}
+
+/* footer */
+h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 48px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--white);
+}
+
+/* section heading */
+h4 {
+    font-family: 'Jost', sans-serif;
+    font-size: 40px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--white);
+}
+
+/* section sub-headings */
+h5 {
+    font-family: 'Jost', sans-serif;
+    font-size: 32px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--white);
+}
+
+/* nav & homepage sub-headings */
+h6 {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--grey);
+    margin: 0;
+}
+
+.white h6 {
+    color: var(--white);
+}
+
+.accent h6 {
+    color: var(--accent);
+}
+
+/* only used on homepage */
+.homepage p {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--white);
+}
+
+/* body text */
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* ---------------------- nav & footer ---------------------- */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    margin: 0 40px;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 363px;
+}
+
+.nav-item, .nav-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item .icon {
+    width: 24px;
+    height: 24px;
+    border: var(--grey) 1px solid;
+    border-radius: 50%;
+    margin-right: 10px;
+}
