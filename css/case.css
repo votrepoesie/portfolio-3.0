@@ -1,0 +1,58 @@
+/* ------------------------------------------ FONT ADJUSTMENT */
+
+h4, h5 {
+    margin: 24px 0;
+}
+
+/* ------------------------------------------ HEADER */
+
+.case-header {
+    margin-bottom: 160px;
+}
+
+.case-header .graphic {
+    height: 80vh;
+    width: 100vw;
+    background: #2f2a35;
+}
+
+.case-header .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 120px;
+}
+
+.case-header h1 {
+    margin: 0;
+    max-width: 800px;
+    font-size: 100px;
+}
+
+.case-header p {
+    max-width: 400px;
+}
+
+/* ------------------------------------------ CONTAINERS */
+
+.default-container {
+    max-width: 932px;
+    margin: 0 auto;
+    margin-bottom: 160px;
+}
+
+.img-and-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-and-text .text {
+    align-items: end;
+    max-width: 308px;
+}
+
+
