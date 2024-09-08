@@ -4,6 +4,24 @@ h4, h5 {
     margin: 24px 0;
 }
 
+a {
+    color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+.smaller-p {
+    font-size: 18px;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.top-margin-40 {
+    margin-top: 40px;
+}
+
 /* ------------------------------------------ HEADER */
 
 .case-header {
@@ -48,11 +66,176 @@ h4, h5 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 80px;
 }
 
 .img-and-text .text {
     align-items: end;
     max-width: 308px;
 }
+
+.text-and-cards {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.cards h5 {
+    font-size: 28px;
+    margin: 14px 0;
+}
+
+.cards p {
+    margin-top: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 32px;
+    border: 1px solid var(--grey);
+    border-radius: 16px;
+    background: var(--dark-grey);
+}
+
+.context p {
+    max-width: 369px;
+}
+
+.card div {
+    margin: auto;
+}
+
+.video {
+    margin-top: 40px;
+}
+
+.video img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* ---------------------------------------- */
+
+.course-catalog img {
+    width: 40%;
+}
+
+.course-catalog .text {
+    max-width: 480px;
+}
+
+.teachers .card, .students .card {
+    height: 137px;
+}
+
+.teachers .card p, .students .card p {
+    max-width: 216px;
+    margin: 14px 0;
+}
+
+.students .card {
+    border: 1px solid var(--blue);
+    background: var(--dark-blue); 
+}
+
+.ff-problem {
+    margin-bottom: 160px;
+}
+
+/* ----------------------------------------- CALLOUT */
+
+.callout {
+    padding: 80px 0;
+    background: var(--dark-blue);
+    margin-bottom: 160px;
+}
+
+.callout .content {
+    max-width: 932px;
+    margin: 0 auto;
+}
+
+/* .callout .icon-plus-text {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+} */
+
+.callout .icon-plus-text svg {
+    margin-right: 4px;
+}
+
+.callout .icon-plus-text h5 {
+    max-width: 832px;
+}
+
+.h5-callout {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* ----------------------------------------- GRID */
+
+.parent {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.div1 { 
+    grid-area: 1 / 1 / 6 / 4; 
+}
+
+.div1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.div2 { 
+    grid-area: 5 / 3 / 7 / 6; 
+    border: 1px solid var(--grey);
+    background: #1D1D1D;
+    border-radius: 16px;
+    z-index: 1;
+    height: 130px;
+    width: 540px;
+    margin-top: 20px;
+}
+
+.div2 p {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.div3 { 
+    grid-area: 1 / 4 / 5 / 6; 
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.carousel {
+    margin-top: 40px;
+    width: 100%;
+    height: 500px;
+}
+
+
 
 

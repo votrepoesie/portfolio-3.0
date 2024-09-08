@@ -15,8 +15,9 @@ hello there!
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
     <script src="js/main.js" defer></script>
+    <script src="js/home.js" defer></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- ^3^ -->
@@ -24,6 +25,9 @@ hello there!
 </head>
 <body>
     <special-header></special-header>
+
+    <div id="blob"></div>
+    <div id="small-blob"></div>
 
     <div class="hero">
         <div class="graphic">
@@ -208,7 +212,7 @@ hello there!
                 </div>
             </div>
 
-            <div class="icon-plus-text">
+            <div class="icon-plus-text scroll-down">
                 <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                     <path opacity="0.2" d="M23.4375 16.875L15 25.3125L6.56248 16.875H23.4375Z" fill="#F8F8F8"/>
                     <path d="M24.3035 16.5164C24.2326 16.3451 24.1125 16.1986 23.9583 16.0956C23.8042 15.9926 23.6229 15.9375 23.4375 15.9375H15.9375V4.6875C15.9375 4.43886 15.8387 4.2004 15.6629 4.02459C15.4871 3.84877 15.2486 3.75 15 3.75C14.7514 3.75 14.5129 3.84877 14.3371 4.02459C14.1613 4.2004 14.0625 4.43886 14.0625 4.6875V15.9375H6.56249C6.37696 15.9374 6.19556 15.9923 6.04126 16.0953C5.88695 16.1983 5.76667 16.3447 5.69566 16.5161C5.62464 16.6875 5.60607 16.8761 5.64231 17.0581C5.67854 17.2401 5.76795 17.4072 5.89921 17.5383L14.3367 25.9758C14.4238 26.0629 14.5272 26.1321 14.641 26.1793C14.7548 26.2265 14.8768 26.2507 15 26.2507C15.1232 26.2507 15.2452 26.2265 15.359 26.1793C15.4728 26.1321 15.5762 26.0629 15.6633 25.9758L24.1008 17.5383C24.2318 17.4071 24.3211 17.24 24.3571 17.0581C24.3932 16.8762 24.3746 16.6877 24.3035 16.5164ZM15 23.9871L8.82538 17.8125H21.1746L15 23.9871Z" fill="#F8F8F8"/>

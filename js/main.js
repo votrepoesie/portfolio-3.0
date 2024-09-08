@@ -3,13 +3,11 @@
 //    -- 1.1 Special Header / HTML
 //    -- 1.2 Special Header / Hover Effects / Logo
 //    -- 1.3 Special Header / Hover Effects / Menu Items
+//    -- 1.4 Special Header / Hide Header on Scroll
 
 // 2. Special Footer
 //    -- 2.1 Special Footer / HTML
 //    -- 2.2 Special Footer / Hover Effects / Icons
-
-// 3. Homepage 
-//    -- 3.1 Arrow Animaton
 // -------------------------------------------------------------------------------
 
 // special header / HTML
@@ -157,7 +155,7 @@ navItems.forEach(item => {
     item.addEventListener('mouseleave', () => {
         anime({
             targets: icon,
-            backgroundColor: '#000000',
+            backgroundColor: 'rgba(0,0,0,0)',
             borderColor: '#BCBCBC',
             easing: 'linear',
             duration: 200
@@ -204,6 +202,35 @@ navBtn.addEventListener('mouseleave', () => {
         easing: 'linear',
         duration: 200
     });
+});
+
+// special header / hide header on scroll
+let header = document.querySelector('nav');
+let lastScrollY = window.scrollY;
+let threshold = 10;
+
+document.addEventListener('scroll', () => {
+    let currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        anime ({
+            targets: header,
+            opacity: 0,
+            easing: 'linear',
+            duration: 200
+        })
+    } else if (lastScrollY - currentScrollY > threshold) {
+        // Scrolling up
+        anime ({
+            targets: header,
+            opacity: 1,
+            easing: 'linear',
+            duration: 200
+        })
+    }
+
+    lastScrollY = currentScrollY; // update lastScrollY for the next scroll event
 });
 
 
@@ -310,130 +337,3 @@ function changeColorBack(svg) {
         easing: 'linear'
     });
 }
-
-// homepage / arrow animation
-let arrow = document.querySelector('#arrow');
-anime({
-    targets: arrow,
-    translateY: 8,
-    direction: 'alternate',
-    loop: true,
-    easing: 'easeInOutSine',
-    duration: 600
-});
-
-// homepage / arm animation
-let arm = document.querySelector('#arm');
-function wave() {
-    anime({
-        targets: arm,
-        translateX: 54,
-        rotate: 10,
-        translateY: -114,
-        direction: 'alternate',
-        loop: true,
-        easing: 'easeInOutSine',
-        duration: 800
-    });
-}
-
-wave();
-
-// homepage / laptop animation
-let laptopTop = document.querySelector('#laptop-top');
-let laptopBottom = document.querySelector('#laptop-bottom');
-
-function lift() {
-    anime({
-        targets: [laptopTop, laptopBottom],
-        translateY: -10,
-        direction: 'alternate',
-        loop: true,
-        easing: 'easeInOutSine',
-        duration: 800,
-        delay: 1000
-    });
-}
-
-lift();
-
-// homepage / case studies / populate 
-
-const caseStudies = [
-    {
-      title: "FUTURE FRAME",
-      description: "How might we encourage high school students to make well-informed decisions regarding classes and career paths?",
-      tags: ["ed-tech", "creativity"],
-      redirectUrl: "future-frame.html",
-    },
-
-    {
-      title: "BUMBLE: CHANCE ENCOUNTERS",
-      description: "How might we encourage more organic interactions between Bumble users through a new geolocation feature?",
-      tags: ["mobile", "interaction-design"],
-      redirectUrl: "chance-encounters.html",
-    },
-
-    {
-      title: "VR GAME FOR SELF-COMPASSION",
-      description: "How might we empower young adults to manage stress and overcome feelings of inadequacy?",
-      tags: ["rapid-prototyping", "mental-health"],
-      redirectUrl: "vr-game.html",
-    },
-];
-
-const caseStudiesContainer = document.querySelector('.case-studies');
-
-caseStudies.forEach(caseStudy => {
-  // Create the case study container
-  const caseStudyDiv = document.createElement('div');
-  caseStudyDiv.classList.add('case-study');
-  
-  // Create the graphic div
-  const graphicDiv = document.createElement('div');
-  graphicDiv.classList.add('graphic');
-  
-  // Create the content div
-  const contentDiv = document.createElement('div');
-  contentDiv.classList.add('content');
-  
-  // Create the title
-  const title = document.createElement('h4');
-  title.textContent = caseStudy.title;
-  
-  // Create the description
-  const description = document.createElement('p');
-  description.textContent = caseStudy.description;
-  
-  // Create the tags container
-  const tagsDiv = document.createElement('div');
-  tagsDiv.classList.add('tags');
-  
-  // Create and append each tag
-  caseStudy.tags.forEach(tag => {
-    const tagDiv = document.createElement('div');
-    tagDiv.classList.add('tag');
-    tagDiv.textContent = tag;
-    tagsDiv.appendChild(tagDiv);
-  });
-  
-  // Append title, description, and tags to contentDiv
-  contentDiv.appendChild(title);
-  contentDiv.appendChild(description);
-  contentDiv.appendChild(tagsDiv);
-  
-  // Append graphic and contentDiv to caseStudyDiv
-  caseStudyDiv.appendChild(graphicDiv);
-  caseStudyDiv.appendChild(contentDiv);
-  
-  // Add click event to redirect to the corresponding page
-  caseStudyDiv.addEventListener('click', () => {
-    window.location.href = caseStudy.redirectUrl;
-  });
-  
-  // Append the caseStudyDiv to the case studies container
-  caseStudiesContainer.appendChild(caseStudyDiv);
-});
-
-  
-
