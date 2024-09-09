@@ -170,3 +170,40 @@ document.addEventListener('scroll', () => {
     });
   }
 });
+
+let footer = document.querySelector('special-footer');
+
+footer.addEventListener('mouseover', () => {
+  console.log('hover');
+  blob.style.display = 'none';
+  smallBlob.style.display = 'none';
+});
+
+footer.addEventListener('mouseout', () => {
+  blob.style.display = 'block';
+  smallBlob.style.display = 'block';
+});
+
+
+
+// homepage / responsive sizing / hero section
+
+// detect screen size
+window.addEventListener('resize', () => {
+  let screenSize = window.innerWidth;
+  // console.log('screen size: ' + screenSize);
+
+  if (screenSize < 600) {
+    // cursor animation
+    blob.style.display = 'none';
+    smallBlob.style.display = 'none';
+  
+    // hero section
+    // let hero = document.querySelector('.hero');
+    // let heroGraphic = hero.querySelector('svg');
+    // console.log(heroGraphic);
+    // heroGraphic.style.width = screenSize + 100;
+    // heroGraphic.style.height = 500;
+  };
+});
+

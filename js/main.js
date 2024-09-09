@@ -17,7 +17,7 @@ class SpecialHeader extends HTMLElement {
             <nav>
                 <div class="logo">
                     <a href="index.html">
-                        <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle id="flower" cx="24.5" cy="24.5" r="24" stroke="#D6BDFF" stroke-width="1.5"/>
                             <circle id="circle" cx="24.5014" cy="24.5" r="12.2826" stroke="#D6BDFF"/>
                             <path id="jun" d="M18.3394 34.0388H33.209V35.9612H18.3394V34.0388ZM17.4631 27.1977H34.4246V37.2898H32.1913V29.0917H19.5833V37.3181H17.4631V27.1977ZM14.5231 12.5825H33.7462V24.286H14.1838V22.4485H31.5694V14.42H14.5231V12.5825ZM11.4983 17.4448H36.7992V19.3388H11.4983V17.4448ZM22.0144 13.2892L24.2194 13.6567C22.6646 21.6852 19.6681 28.9787 12.3181 32.9929C12.0071 32.5123 11.3852 31.7208 10.9894 31.2967C17.9437 27.6217 20.7706 20.6958 22.0144 13.2892Z" fill="#D6BDFF"/>
@@ -261,7 +261,7 @@ class SpecialFooter extends HTMLElement {
                     </div>
                 </div>
                 <div class="graphic">
-                    <svg width="624" height="342" viewBox="0 0 624 342" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg viewBox="0 0 624 342" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1290_2844)">
                         <circle cx="237.5" cy="228.5" r="122.5" fill="#B4A1BD"/>
                         <rect x="115" y="225" width="245" height="137" fill="#B4A1BD"/>
