@@ -51,21 +51,21 @@ const caseStudies = [
       title: "FUTURE FRAME",
       description: "How might we encourage high school students to make well-informed decisions regarding classes and career paths?",
       tags: ["ed-tech", "creativity"],
-      redirectUrl: "future-frame.html",
+      redirectUrl: "#",
     },
 
     {
       title: "BUMBLE: CHANCE ENCOUNTERS",
       description: "How might we encourage more organic interactions between Bumble users through a new geolocation feature?",
       tags: ["mobile", "interaction-design"],
-      redirectUrl: "chance-encounters.html",
+      redirectUrl: "#",
     },
 
     {
       title: "VR GAME FOR SELF-COMPASSION",
       description: "How might we empower young adults to manage stress and overcome feelings of inadequacy?",
       tags: ["rapid-prototyping", "mental-health"],
-      redirectUrl: "vr-game.html",
+      redirectUrl: "#",
     },
 ];
 
@@ -75,6 +75,7 @@ caseStudies.forEach(caseStudy => {
   // Create the case study container
   const caseStudyDiv = document.createElement('div');
   caseStudyDiv.classList.add('case-study');
+  caseStudyDiv.classList.add('hidden');
   
   // Create the graphic div
   const graphicDiv = document.createElement('div');
@@ -171,6 +172,7 @@ document.addEventListener('scroll', () => {
   }
 });
 
+// fix the issue where blob goes below footer and creates extra negative space
 let footer = document.querySelector('special-footer');
 
 footer.addEventListener('mouseover', () => {
@@ -184,26 +186,30 @@ footer.addEventListener('mouseout', () => {
   smallBlob.style.display = 'block';
 });
 
+// hides cursor animation on mobile
+let screenSize = window.innerWidth;
+
+if (screenSize < 600) {
+  // cursor animation
+  blob.style.display = 'none';
+  smallBlob.style.display = 'none';
+};
 
 
-// homepage / responsive sizing / hero section
 
-// detect screen size
-window.addEventListener('resize', () => {
-  let screenSize = window.innerWidth;
-  // console.log('screen size: ' + screenSize);
-
-  if (screenSize < 600) {
-    // cursor animation
-    blob.style.display = 'none';
-    smallBlob.style.display = 'none';
-  
-    // hero section
-    // let hero = document.querySelector('.hero');
-    // let heroGraphic = hero.querySelector('svg');
-    // console.log(heroGraphic);
-    // heroGraphic.style.width = screenSize + 100;
-    // heroGraphic.style.height = 500;
-  };
+// scroll animations
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
 });
 
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach(element => {
+  observer.observe(element);
+});

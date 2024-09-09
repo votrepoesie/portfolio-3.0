@@ -395,7 +395,26 @@ nav a {
     opacity: 0.6;
 }
 
-/* ----------------------RESPONSIVE----------------------- */
+/* ---------------------- SCROLL ANIMATION -----------------------*/
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-8%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+/* ---------------------- RESPONSIVE ----------------------- */
 
 
 @media only screen and (max-width: 600px) {
@@ -407,7 +426,7 @@ nav a {
     }
 
     h3 {
-        font-size: 36px;
+        font-size: 38px;
     }
 
     h4 {
@@ -519,29 +538,33 @@ nav a {
     }
 
     .case-study .content h4 {
-        margin-bottom: 16px;
+        margin-bottom: 8px;
     }
 
     .case-study .content p {
-        margin-bottom: 16px;
+        margin-top: 0;
+        margin-bottom: 24px;
     }
 
     /* --------------- footer--------------- */
 
     .footer {
+        height: fit-content;
         flex-direction: column;
         padding: 0;
     }
 
     .footer .content {
-        padding: 80px 0;
+        padding: 0;
+        margin: 80px 0;
         width: 90vw;
     }
 
     .footer .graphic {
+        width: 400px;
+        height: 200px;
         padding-top: 0;
-        width: 100vw;
-        height: 310px;
-        margin-right: 40px;
+        margin-right: 0;
+        /* display: none; */
     }
 }
