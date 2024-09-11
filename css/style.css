@@ -17,6 +17,8 @@
     --dark-grey: rgba(160, 160, 160, 0.20);
     --blue: #548DFF;
     --dark-blue: rgba(84, 141, 255, 0.20);
+    --green: #75FF95;
+    --dark-green: #17331E;
 }
 
 body {
@@ -140,6 +142,14 @@ p {
     text-underline-offset: 2px;
 }
 
+.p-smaller {
+    font-size: 16px;
+}
+
+.p-smallest {
+    font-size: 12px;
+}
+
 /* ---------------------- nav & footer ---------------------- */
 nav {
     display: flex;
@@ -176,6 +186,10 @@ nav a {
     align-items: center;
     width: 363px;
     margin-right: 40px;
+}
+
+.nav-item {
+    visibility: hidden;
 }
 
 .nav-item, .nav-btn {
@@ -408,8 +422,17 @@ nav a {
     transform: translateX(0);
 }
 
+.hidden-fade {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show-fade {
+    opacity: 1;
+}
+
 @media (prefers-reduced-motion) {
-    .hidden {
+    .hidden, .hidden-fade {
         transition: none;
     }
 }

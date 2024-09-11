@@ -28,9 +28,9 @@ caught you peeking!
 
     <special-header></special-header>
 
-    <div class="case-header">
+    <div class="case-header hidden-fade">
         <div class="graphic"></div>
-        <div class="content">
+        <div class="content hidden">
             <h1>FUTURE FRAME</h1>
             <p>
                 Encouraging high school students to make well-informed decisions regarding classes and career paths.
@@ -39,12 +39,14 @@ caught you peeking!
     </div>
 
     <div class="default-container">
-        <h4>OVERVIEW</h4>
-        <p>
-            Future Frame is a desktop application that provides structured guidance for visualizing different aspects of students’ lives, encourages freedom and creativity, and fosters connections with peers, educators, and family members.
-        </p>
+        <div class="hidden-fade">
+            <h4 >OVERVIEW</h4>
+            <p>
+                Future Frame is a desktop application that provides structured guidance for visualizing different aspects of students’ lives, encourages freedom and creativity, and fosters connections with peers, educators, and family members.
+            </p>
+        </div>
 
-        <!-- <div class="img-and-text">
+        <div class="img-and-text hidden-fade">
             <div class="img">
                 <svg width="521" height="415" viewBox="0 0 521 415" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="83" y="265" width="184" height="118" fill="#0066FF" fill-opacity="0.2"/>
@@ -84,10 +86,10 @@ caught you peeking!
                     I supported research and client liaison throughout, and I owned the end-to-end design process from ideation to delivery with a fellow designer.
                 </p>
             </div>
-        </div> -->
+        </div>
 
         <!-- <div class="text-and-cards context">
-            <h5>More Context...</h5>
+            <h5>And some numbers</h5>
             <div class="cards">
                 <div class="card">
                     <h5>7 months</h5>
@@ -104,20 +106,22 @@ caught you peeking!
             </div>
         </div> -->
 
-        <div class="video">
-            <!-- <h5>
-                Combining the power of visualization and vision boarding.
-            </h5> -->
-            <img src="images/video-placeholder.png">
+        <div class="video hidden-fade">
+            <h5 class="hidden">
+                Prototype Demo
+            </h5>
+            <img class="hidden" src="images/video-placeholder.png">
         </div>
     </div>
 
     <div class="default-container ff-problem">
-        <h4>YOU WANTED A COURSE CATALOG?</h4>
-        <p>
-            South Fayette High School is a public high school in the suburbs of Pittsburgh. They came to us with a proposal to make a course catalog for the future -- flexible, student-centered, and data-driven.
-        </p>
-        <div class="img-and-text course-catalog">
+        <div class="hidden-fade">
+            <h4>INITIAL PROBLEM</h4>
+            <p>
+                South Fayette High School is a public high school in the suburbs of Pittsburgh. They came to us with a proposal to make a course catalog for the future -- flexible, student-centered, and data-driven.
+            </p>
+        </div>
+        <div class="img-and-text course-catalog hidden-fade">
             <img class="img" src="images/ff-course-catalog.png">
             <div class="text">
                 <h5>This document was thought to be the root of the problem.</h5>
@@ -129,7 +133,7 @@ caught you peeking!
             </div>
         </div>
 
-        <div class="text-and-cards teachers">
+        <div class="text-and-cards teachers hidden-fade">
             <h5>Our client & educators had a few concerns.</h5>
             <div class="cards">
                 <div class="card">
@@ -150,7 +154,7 @@ caught you peeking!
             </div>
         </div>
 
-        <div class="text-and-cards students">
+        <div class="text-and-cards students hidden-fade">
             <h5>HOWEVER, students offered a different perspective.</h5>
             <div class="cards">
                 <div class="card">
@@ -175,32 +179,35 @@ caught you peeking!
         </div>
     </div>
 
-    <div class="callout">
+    <div class="callout hidden-fade">
         <div class="content">
             <div class="icon-plus-text">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="27" height="36" viewBox="0 0 27 36" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="36" viewBox="0 0 27 36" fill="none">
                     <path id="lightbulb" d="M17.7805 31.3822L11.1554 33.1573C10.6834 33.2838 10.1938 33.0011 10.0673 32.5291C9.9409 32.0572 10.2236 31.5675 10.6955 31.4411L17.3205 29.6659C17.7926 29.5395 18.2821 29.8221 18.4086 30.2941C18.5352 30.7661 18.2524 31.2557 17.7805 31.3822ZM14.713 11.0226C14.6537 11.8302 14.1968 12.2854 13.4876 12.2739C12.7814 12.2625 12.2675 11.7786 12.2845 11.0416C12.3009 10.3246 12.7505 9.85354 13.5153 9.8619C14.2796 9.87013 14.6584 10.3217 14.713 11.0226ZM23.2064 8.30083C20.5709 3.94792 15.3509 1.83299 10.5014 3.24986C6.25736 4.48989 3.49022 7.29212 2.48404 11.6018C1.48814 15.8674 2.72775 19.5363 5.86502 22.6089C6.60077 23.3295 7.27725 24.2023 7.69202 25.1338C8.10785 26.0674 8.24116 26.3593 9.25401 26.1142C10.6607 25.7738 12.0485 25.3558 13.4549 25.0141C14.1759 24.839 14.4498 24.4364 14.445 23.7096C14.4258 20.7762 14.4322 17.8425 14.4429 14.909C14.4453 14.245 14.2366 13.6982 13.5221 13.6816C12.7989 13.6648 12.5775 14.1933 12.5835 14.8703C12.6003 16.7721 12.5886 18.6742 12.5884 20.5761C12.5884 23.6358 12.5884 23.6358 9.57998 24.0754C8.43628 22.7649 7.39481 21.5869 6.37 20.3944C2.69196 16.1148 3.36457 9.78836 7.95506 6.51172C11.253 4.15759 14.7958 4.0266 18.3279 6.01426C21.6076 7.85997 23.3918 11.6625 22.9189 15.3409C22.603 17.7981 21.4296 19.7597 19.6892 21.4458C18.6389 22.4634 17.6818 23.5591 17.3373 25.0305C17.1761 25.7187 16.7902 26.0601 16.1235 26.2244C16.2481 26.1086 8.93747 28.157 8.93747 28.157C8.47495 28.2809 8.19799 28.7607 8.32195 29.2232L8.34101 29.2947C8.46497 29.7571 8.94471 30.0341 9.40722 29.9102C9.40722 29.9102 17.7955 27.6562 17.9055 27.625C18.6823 27.4106 19.1051 26.8576 19.1228 26.0682C19.1492 24.8899 19.6612 23.9727 20.4945 23.1898C20.9405 22.7706 21.3846 22.3476 21.8044 21.9026C25.2691 18.2279 25.8409 12.6523 23.2064 8.30083Z" fill="#548DFF"/>
-                </svg> -->
-                <h4 class="blue">PLOT TWIST, WE'RE NOT MAKING A COURSE CATALOG ANYMORE.</h5>
+                </svg>
+                <h4 class="blue">PROBLEM REFRAME</h5>
             </div>
             <h5 class="h5-callout">
-                INSTEAD, how might we help students make informed and confident decisions regarding courses and career paths?
+                How might we help students make informed and confident decisions regarding courses and career paths?
             </h5>
         </div>
     </div>
 
     <div class="default-container">
-        <h4>
-            MAKE, TEST, AND REPEAT
-        </h4>
-        <p>
-            To get started on this new direction, we explored ways to reshapes how students make important life decisions. A few of the prototypes led to <a href="https://medium.com/mhci-capstone-south-fayette-school-district-2024" target="_blank">important insights</a>, and in the end, we decided to make a vision boarding tool.
-        </p>
-        <div class="parent">
+        <div class="hidden-fade">
+            <h4>
+                MAKE, TEST, AND REPEAT
+            </h4>
+            <p>
+                To get started on this new direction, we explored ways to reshapes how students make important life decisions. 
+                Rapid prototyping led to important insights, and we decided to make a vision boarding tool.
+            </p>
+        </div>
+        <div class="parent hidden-fade">
             <div class="div1">
                 <img src="images/creative-matrix.png">
             </div>
-            <div class="div2">
+            <div class="div2 hidden">
                 <p class="smaller-p">
                     Through trial-and-error, this was the design process that worked best for the team. It gave us a steady flow of ideas that were carefully evaluated.
                 </p>
@@ -239,15 +246,140 @@ caught you peeking!
         </div>
     </div>
 
-    <div class="callout">
-        <div class="content">
-            <h4 class="blue">AFTER 5 MONTHS OF RESEARCH AND TESTING, WE DECIDED TO MAKE A VISION BOARDING TOOL.</h4>
-            <div class="carousel">
+    <div class="default-container rapid-prototyping">
+        <div class="prototype hidden">
+            <div class="graphic">
+                <img src="images/ff-rapid-prototype-1.png">
+            </div>
+            <div class="content">
+                <h5>Tinder-inspired course-finding tool</h5>
+                <div class="feedbacks">
+                    <div class="feedback hidden">
+                        <p class="name">Student</p>
+                        <p class="boxed">
+                            There is too much going on and takes forever to get to the course swiping. I'm confused.
+                        </p>
+                    </div>
+                    <div class="feedback hidden">
+                        <p class="name">Client</p>
+                        <p class="boxed">
+                            We&apos;d love to see something more innovative!
+                        </p>
+                    </div>
+                </div>
+                <div class="insight hidden">
+                    <p>We&apos;ll focus on one thing and make it more innovative.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="prototype hidden">
+            <div class="graphic">
+                <img src="images/ff-rapid-prototype-2.png">
+            </div>
+            <div class="content">
+                <h5>AR classroom explorer</h5>
+                <div class="feedbacks">
+                    <div class="feedback hidden">
+                        <p class="name">Student</p>
+                        <p class="boxed">
+                            I love that I can see things from the student perspective, which is important and valuable for me.
+                        </p>
+                    </div>
+                    <div class="feedback hidden">
+                        <p class="name">Client</p>
+                        <p class="boxed">
+                            This is great, but a little too hard to implement.
+                        </p>
+                    </div>
+                </div>
+                <div class="insight hidden">
+                    <p>
+                        We agree on the technical part, but we&apos;ll keep the student perspective in mind. Super important!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="prototype hidden">
+            <div class="graphic">
+                <img src="images/ff-rapid-prototype-3.png">
+            </div>
+            <div class="content">
+                <h5>Reflect & plan the next year through vision boarding</h5>
+                <div class="feedbacks">
+                    <div class="feedback hidden">
+                        <p class="name">Student</p>
+                        <p class="boxed">
+                            This helped me think through what I have going on and what I want to do, and it's super fun!
+                        </p>
+                    </div>
+                    <div class="feedback hidden">
+                        <p class="name">Client</p>
+                        <p class="boxed">
+                            This is easy to implement.
+                        </p>
+                    </div>
+                </div>
+                <div class="insight hidden">
+                    <p>
+                        Visualization is really engaging and allow for new perspectives. This is major!
+                </div>
             </div>
         </div>
     </div>
 
-    <special-footer></special-footer>
+    <div class="callout lofi-vision-board">
+        <div class="content">
+            <div class="icon-plus-text hidden-fade">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="36" viewBox="0 0 27 36" fill="none">
+                    <path id="lightbulb" d="M17.7805 31.3822L11.1554 33.1573C10.6834 33.2838 10.1938 33.0011 10.0673 32.5291C9.9409 32.0572 10.2236 31.5675 10.6955 31.4411L17.3205 29.6659C17.7926 29.5395 18.2821 29.8221 18.4086 30.2941C18.5352 30.7661 18.2524 31.2557 17.7805 31.3822ZM14.713 11.0226C14.6537 11.8302 14.1968 12.2854 13.4876 12.2739C12.7814 12.2625 12.2675 11.7786 12.2845 11.0416C12.3009 10.3246 12.7505 9.85354 13.5153 9.8619C14.2796 9.87013 14.6584 10.3217 14.713 11.0226ZM23.2064 8.30083C20.5709 3.94792 15.3509 1.83299 10.5014 3.24986C6.25736 4.48989 3.49022 7.29212 2.48404 11.6018C1.48814 15.8674 2.72775 19.5363 5.86502 22.6089C6.60077 23.3295 7.27725 24.2023 7.69202 25.1338C8.10785 26.0674 8.24116 26.3593 9.25401 26.1142C10.6607 25.7738 12.0485 25.3558 13.4549 25.0141C14.1759 24.839 14.4498 24.4364 14.445 23.7096C14.4258 20.7762 14.4322 17.8425 14.4429 14.909C14.4453 14.245 14.2366 13.6982 13.5221 13.6816C12.7989 13.6648 12.5775 14.1933 12.5835 14.8703C12.6003 16.7721 12.5886 18.6742 12.5884 20.5761C12.5884 23.6358 12.5884 23.6358 9.57998 24.0754C8.43628 22.7649 7.39481 21.5869 6.37 20.3944C2.69196 16.1148 3.36457 9.78836 7.95506 6.51172C11.253 4.15759 14.7958 4.0266 18.3279 6.01426C21.6076 7.85997 23.3918 11.6625 22.9189 15.3409C22.603 17.7981 21.4296 19.7597 19.6892 21.4458C18.6389 22.4634 17.6818 23.5591 17.3373 25.0305C17.1761 25.7187 16.7902 26.0601 16.1235 26.2244C16.2481 26.1086 8.93747 28.157 8.93747 28.157C8.47495 28.2809 8.19799 28.7607 8.32195 29.2232L8.34101 29.2947C8.46497 29.7571 8.94471 30.0341 9.40722 29.9102C9.40722 29.9102 17.7955 27.6562 17.9055 27.625C18.6823 27.4106 19.1051 26.8576 19.1228 26.0682C19.1492 24.8899 19.6612 23.9727 20.4945 23.1898C20.9405 22.7706 21.3846 22.3476 21.8044 21.9026C25.2691 18.2279 25.8409 12.6523 23.2064 8.30083Z" fill="#548DFF"/>
+                </svg>
+                <h4 class="blue">VISUALIZATION IS KEY</h5>
+            </div>
+            <h5 class="h5-callout hidden-fade">
+                We found it helps with articulating existing goals and interests, 
+                increasing motivation, and providing a sense of direction.
+            </h5>
+            <div class="graphic hidden">
+                <img src="images/ff-vision-board-lofi.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="default-container">
+        <h4 class="hidden-fade">HOW IT WORKS</h4>
+        <p class="hidden-fade">
+            A vision is a vivid, picture-like mental representation of a desirable, long-term future state.
+        </p>
+        <div class="research-quote hidden-fade">
+            <p class="p-smaller">
+                Evoked vision, which is different from merely thinking of a goal, fosters enhanced motivation, performance, and readiness for change. Furthermore, visions become more meaningful when they reflect an individual's values and identity, which reinforces commitment and progress toward a goal.
+            </p>
+            <p class="p-smallest">
+                Julian Voigt, Kennon M. Sheldon, Hugo M. Kehr. When visions truly inspire: The moderating role of self-concordance in boosting positive affect, goal commitment, and goal progress. Journal of Research in Personality, Volume 109, 2024.
+            </p>
+        </div>
+        <p class="hidden-fade">
+            We&apos;re using vision boarding to help students articulate their goals and communicate with their support system (parents, teachers, peers, and so on).
+        </p>
+        <div class="research-quote hidden-fade">
+            <p class="p-smaller">
+                Vision boards are a flexible and creative method to help adolescents articulate their goals and aspirations through visual media. They are particularly useful for those from low socioeconomic status backgrounds who may face barriers to career possibilities.
+                <br><br>
+                Furthermore, vision boards can help counselors support students' career and college readiness by promoting self-reflection and identity exploration.
+            </p>
+            <p class="p-smallest">
+                Phillip L. Waalkes, Laura M. Gonzalez, and Crystal N. Brunson. Vision Boards and Adolescent Career Counseling: A Culturally Responsive Approach. Journal of Creativity in Mental Health, 2019.
+            </p>
+        </div>
+    </div>
+
+    <div class="default-container">
+        <h4>FINAL DESIGN ITERATIONS</h4>
+    </div> 
+
+    <special-footer class="hidden-fade"></special-footer>
     
 </body>
 </html>

@@ -41,7 +41,7 @@ class SpecialHeader extends HTMLElement {
                         </div>
                     </a>
 
-                    <a href="#">
+                    <a href="../images/Li_Resume.pdf">
                         <div class="nav-btn">
                             <h6>resume</h6>
                         </div>
@@ -207,9 +207,19 @@ navBtn.addEventListener('mouseleave', () => {
 // special header / hide header on scroll
 let header = document.querySelector('nav');
 let lastScrollY = window.scrollY;
+let windowWidth = window.innerWidth;
 let threshold = 10;
+let mobileThreshold = 2;
 
 document.addEventListener('scroll', () => {
+    if (windowWidth > 600) {
+        hideNavBar(threshold);
+    } else {
+        hideNavBar(mobileThreshold);
+    }
+});
+
+function hideNavBar( threshold ) {
     let currentScrollY = window.scrollY;
 
     if (currentScrollY > lastScrollY) {
@@ -231,7 +241,7 @@ document.addEventListener('scroll', () => {
     }
 
     lastScrollY = currentScrollY; // update lastScrollY for the next scroll event
-});
+}
 
 
 // special footer / HTML
@@ -337,3 +347,5 @@ function changeColorBack(svg) {
         easing: 'linear'
     });
 }
+
+
