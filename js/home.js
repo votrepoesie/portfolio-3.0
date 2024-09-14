@@ -52,7 +52,7 @@ const caseStudies = [
       description: "How might we encourage high school students to make well-informed decisions regarding classes and career paths?",
       tags: ["ed-tech", "creativity"],
       redirectUrl: "future-frame.html",
-      background: "url('../images/ff-homepage-cover-desktop.png')",
+      background: "url('images/ff-homepage-cover-desktop.png')",
     },
 
     {
@@ -68,7 +68,7 @@ const caseStudies = [
       description: "How might we empower young adults to manage stress and overcome feelings of inadequacy?",
       tags: ["rapid-prototyping", "mental-health"],
       redirectUrl: "#",
-      background: "url('../images/vr-hero.gif')",
+      background: "url('images/vr-hero.gif')",
     },
 ];
 
