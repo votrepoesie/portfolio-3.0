@@ -52,6 +52,7 @@ const caseStudies = [
       description: "How might we encourage high school students to make well-informed decisions regarding classes and career paths?",
       tags: ["ed-tech", "creativity"],
       redirectUrl: "future-frame.html",
+      background: "url('../images/ff-homepage-cover-desktop.png')",
     },
 
     {
@@ -59,6 +60,7 @@ const caseStudies = [
       description: "How might we encourage more organic interactions between Bumble users through a new geolocation feature?",
       tags: ["mobile", "interaction-design"],
       redirectUrl: "#",
+      // background: "url('../images/)",
     },
 
     {
@@ -66,6 +68,7 @@ const caseStudies = [
       description: "How might we empower young adults to manage stress and overcome feelings of inadequacy?",
       tags: ["rapid-prototyping", "mental-health"],
       redirectUrl: "#",
+      background: "url('../images/vr-hero.gif')",
     },
 ];
 
@@ -104,6 +107,10 @@ caseStudies.forEach(caseStudy => {
     tagDiv.textContent = tag;
     tagsDiv.appendChild(tagDiv);
   });
+
+  // Add background image 
+  graphicDiv.style.background = caseStudy.background;
+  graphicDiv.style.backgroundSize = 'cover';
   
   // Append title, description, and tags to contentDiv
   contentDiv.appendChild(title);

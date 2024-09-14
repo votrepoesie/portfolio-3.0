@@ -41,7 +41,7 @@ class SpecialHeader extends HTMLElement {
                         </div>
                     </a>
 
-                    <a href="../images/Li_Resume.pdf">
+                    <a href="Li_Resume.pdf" target="_blank">
                         <div class="nav-btn">
                             <h6>resume</h6>
                         </div>
@@ -208,29 +208,24 @@ navBtn.addEventListener('mouseleave', () => {
 let header = document.querySelector('nav');
 let lastScrollY = window.scrollY;
 let windowWidth = window.innerWidth;
-let threshold = 10;
-let mobileThreshold = 2;
 
 document.addEventListener('scroll', () => {
-    if (windowWidth > 600) {
-        hideNavBar(threshold);
-    } else {
-        hideNavBar(mobileThreshold);
-    }
+    hideNavBar();
 });
 
-function hideNavBar( threshold ) {
+function hideNavBar() {
     let currentScrollY = window.scrollY;
 
     if (currentScrollY > lastScrollY) {
         // Scrolling down
+        console.log(currentScrollY - lastScrollY);
         anime ({
             targets: header,
             opacity: 0,
             easing: 'linear',
             duration: 200
         })
-    } else if (lastScrollY - currentScrollY > threshold) {
+    } else if (lastScrollY - currentScrollY) {
         // Scrolling up
         anime ({
             targets: header,

@@ -156,7 +156,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 72px;
+    height: 80px;
     width: 100vw;
     position: fixed;
     z-index: 5;
