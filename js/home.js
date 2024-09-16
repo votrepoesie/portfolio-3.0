@@ -213,9 +213,10 @@ function fade() {
           console.log(entry);
           if (entry.isIntersecting) {
             entry.target.classList.add('show-fade');
-          } else {
-            entry.target.classList.remove('show-fade');
-          }
+          } 
+          // else {
+          //   entry.target.classList.remove('show-fade');
+          // }
         });
     });
       
@@ -233,9 +234,10 @@ function slide() {
           console.log(entry);
           if (entry.isIntersecting) {
             entry.target.classList.add('show');
-          } else {
-            entry.target.classList.remove('show');
-          }
+          } 
+          // else {
+          //   entry.target.classList.remove('show');
+          // }
         });
       });
       
