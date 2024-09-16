@@ -10,15 +10,22 @@
 
 :root {
     --white: #ffffff;
+    --white-50: #ffffff80;
+    --white-80: #ffffffcc;
     --black: #000000;
+    --off-black: #141414;
     --accent: #D6BDFF;
     --dark-accent: #352C41;
     --grey: #BCBCBC;
-    --dark-grey: rgba(160, 160, 160, 0.20);
+    --dark-grey: #a0a0a033;
+    --bg-grey: #272727;
     --blue: #548DFF;
-    --dark-blue: rgba(84, 141, 255, 0.20);
+    --dark-blue: #548dff33;
     --green: #75FF95;
     --dark-green: #17331E;
+    /* future frame */
+    --creativity: #ffcc41;
+    --creativity-20: #ffcc4133;
 }
 
 body {
@@ -31,7 +38,7 @@ body {
 /* case study header section */
 h1 {
     font-family: 'Jost', sans-serif;
-    font-size: 88px;
+    font-size: 96px;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
@@ -63,7 +70,7 @@ h4 {
     font-family: 'Jost', sans-serif;
     font-size: 40px;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     color: var(--white);
 }
@@ -87,6 +94,17 @@ h6 {
     font-style: normal;
     color: var(--grey);
     margin: 0;
+}
+
+.section-titles {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--white-50);
+    margin: 0;
+    margin-bottom: 16px;
 }
 
 .white h6 {
@@ -148,6 +166,14 @@ p {
 
 .p-smallest {
     font-size: 12px;
+}
+
+.white-50 {
+    color: var(--white-50);
+}
+
+.white-80 {
+    color: var(--white-80);
 }
 
 /* ---------------------- nav & footer ---------------------- */
@@ -420,15 +446,19 @@ nav a {
 .show {
     opacity: 1;
     transform: translateX(0);
+    transition-delay: 200ms;
 }
 
 .hidden-fade {
     opacity: 0;
+    /* transform: translateY(5%); */
     transition: all 1s;
 }
 
 .show-fade {
     opacity: 1;
+    transition-delay: 100ms;
+    /* transform: translateY(0); */
 }
 
 @media (prefers-reduced-motion) {

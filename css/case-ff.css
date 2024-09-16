@@ -1,0 +1,530 @@
+
+/* ------------------UNIVERSAL STYLES------------------ */
+
+h4 {
+    margin: 0;
+    margin-bottom: 56px;
+}
+
+h5 {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+a {
+    color: var(--creativity);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+p {
+    margin: 0;
+}
+
+.smaller-p {
+    font-size: 18px;
+}
+
+.grey {
+    color: var(--grey);
+}
+
+.dark-grey {
+    background: var(--dark-grey);
+}
+
+.frame {
+    border: 4px solid var(--bg-grey);
+    border-radius: 16px;
+    box-shadow: 8px 8px 0px 0px var(--creativity);
+}
+
+img {
+    border-radius: 16px;
+}
+
+/* ------------------------------------------ HEADER */
+
+.case-header {
+    margin-bottom: 180px;
+}
+
+.case-header .graphic {
+    height: 84vh;
+    width: 100vw;
+    background: url(../images/ff-desktop-cover-yellow.png);
+    background-size: 100%;
+}
+
+.case-header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.case-header h1 {
+    margin: 0;
+    max-width: 800px;
+    font-size: 96px;
+    transition-delay: 200ms;
+}
+
+.case-header p {
+    max-width: 1100px;
+    font-size: 32px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+/* ------------------------------------------ OVERVIEW */
+
+.background {
+    background: var(--bg-grey);
+    width: 100vw;
+    height: fit-content;
+    padding: 120px 0;
+}
+
+.no-background {
+    width: 100vw;
+    height: fit-content;
+    padding: 120px 0;
+}
+
+.default-container {
+    max-width: 932px;
+    margin: 0 auto;
+}
+
+.wide-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logistics .content {
+    max-width: 310px;
+}
+
+.logistics .graphic {
+    width: 480px;
+}
+
+.problem .content {
+    max-width: 510px;
+}
+
+.problem .graphic {
+    width: 302px;
+}
+
+.solution {
+    margin-bottom: 200px;
+}
+
+.impact-1 {
+    margin-bottom: 100px;
+}
+
+.impact-1 .graphic img, .impact-2 .graphic img {
+    width: 480px;
+}
+
+.impact-1 .content {
+    max-width: 520px;
+}
+
+.impact-2 .content {
+    max-width: 510px;
+}
+
+/* ------------------------------------------ RESEARCH */
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.card:nth-child(3) {
+    transition-delay: 300ms;
+}
+
+.cards p {
+    margin: 0;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 32px;
+    border: 1px solid var(--grey);
+    border-radius: 16px;
+    background: var(--dark-grey);
+}
+
+.research .card {
+    max-width: 216px;
+    height: 120px;
+    margin-top: 32px;
+}
+
+.students .card {
+    border: 1px solid var(--blue);
+    background: var(--dark-blue);
+}
+
+.research .content {
+    margin-bottom: 100px;
+}
+
+.evidence h5, .evidence h6 {
+    margin-bottom: 0;
+}
+
+.research .students {
+    margin-bottom: 160px;
+}
+
+/* .pivot img {
+    height: 430px;
+}
+
+.pivot .content {
+    max-width: 450px;
+}
+
+.pivot .content h5 {
+    margin: 0;
+}
+
+.pivot .content p {
+    margin: 50px 0;
+} */
+
+
+/* ----------------------------------------- GRID */
+
+.parent {
+    margin-top: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.div1 { 
+    grid-area: 1 / 1 / 6 / 4; 
+}
+
+.div1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.div2 { 
+    grid-area: 5 / 3 / 7 / 6; 
+    border: 1px solid var(--grey);
+    background: #1D1D1D;
+    border-radius: 16px;
+    z-index: 1;
+    height: 130px;
+    width: 540px;
+    margin-top: 20px;
+}
+
+.div2 p {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.div3 { 
+    grid-area: 1 / 4 / 5 / 6; 
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.rapid-prototyping img {
+    border-radius: 0;
+}
+
+.rapid-prototyping .prototype {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 128px;
+}
+
+.rapid-prototyping .graphic img {
+    width: 380px;
+}
+
+.rapid-prototyping .content {
+    width: 423px;
+}
+
+.rapid-prototyping .feedback {
+    margin: 24px 0;
+} 
+
+.rapid-prototyping .name {
+    font-size: 14px;
+    color: var(--grey);
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.rapid-prototyping .boxed {
+    background: var(--dark-grey);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--grey);
+    margin: 0;
+    max-width: 310px;
+}
+
+.rapid-prototyping .insight {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.rapid-prototyping .insight p {
+    background: var(--dark-blue);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--blue);
+    max-width: 310px;
+    margin: 24px 0;
+}
+
+.lofi-vision-board .h5-callout {
+    margin-bottom: 48px;
+}
+
+.lofi-vision-board img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+/* --------------------------- INSIGHT */
+
+
+.citation {
+    font-size: 14px;
+    color: var(--white-50);
+}
+
+.insight h5 {
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.insight-1 {
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.insight-1 img {
+    width: 355px;
+}
+
+.insight-1 .content {
+    max-width: 485px;
+}
+
+.insight-2 img {
+    width: 100%;
+    margin-top: 56px;
+}
+
+/* --------------------------- DESIGN PROBLEMS / ITERATIONS */
+
+.design-problems h5 {
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.design-problems .cards {
+    margin-top: 56px;
+}
+
+.design-problems .card {
+    max-width: 370px;
+    height: 200px;
+}
+
+.guidance .graphic-1 {
+    margin: 56px 0;
+}
+
+.guidance .graphic-1 img {
+    height: 400px;
+}
+
+.guidance .graphic-2 {
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.guidance .graphic-2 img {
+    width: 100%;
+}
+
+.guidance .graphic-3 {
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.guidance .graphic-3 img {
+    width: 100%;
+}
+
+.image-search {
+    margin-top: 140px;
+}
+
+.colors {
+    margin-top: 140px;
+}
+
+.colors h5 {
+    margin-bottom: 40px;
+}
+
+.colors .graphic {
+    margin: 56px 0;
+}
+
+.colors .graphic img {
+    height: 272px;
+}
+
+.colors .graphic-2 {
+    margin-top: 56px;
+}
+
+.colors .graphic-2 img {
+    width: 100%;
+}
+
+/* ----------------------------------- */
+
+
+.reflection img {
+    width: 612px;
+}
+
+.reflection .content {
+    max-width: 250px;
+}
+
+.reflection .spacer {
+    margin-top: 56px;
+}
+
+/* ----------------------------------- */
+
+.project-1, .project-2 {
+    width: 430px;
+    height: 268px;
+    border-radius: 16px;
+}
+
+.project-1, .project-2:hover {
+    cursor: pointer;
+}
+
+.project-1 {
+    background: url(../images/b-homepage-cover-desktop.png);
+    background-size: cover;
+}
+
+.project-2 {
+    background: url(../images/vr-hero.gif);
+    background-size: cover;
+}
+
+.other-projects {
+    margin-bottom: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.research-quote {
+    padding: 20px;
+    background: var(--dark-grey);
+    border: 1px solid var(--grey);
+    border-radius: 16px;
+    margin-bottom: 80px;
+}
+
+.p-smallest {
+    color: var(--grey);
+}
+
+/*  */
+
+
+.components {
+    border: 2px dashed #A872FF;
+    border-radius: 16px;
+    padding: 80px 0;
+    height: fit-content;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.component p {
+    max-width: 340px;
+    margin-bottom: 0;
+}
+
+.demo {
+    margin: 48px 0;
+}
+

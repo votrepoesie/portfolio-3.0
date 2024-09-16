@@ -49,7 +49,7 @@ lift();
 const caseStudies = [
     {
       title: "FUTURE FRAME",
-      description: "How might we encourage high school students to make well-informed decisions regarding classes and career paths?",
+      description: "Help high school students with future planning through visualization.",
       tags: ["ed-tech", "creativity"],
       redirectUrl: "future-frame.html",
       background: "url('images/ff-homepage-cover-desktop.png')",
@@ -57,15 +57,15 @@ const caseStudies = [
 
     {
       title: "BUMBLE: CHANCE ENCOUNTERS",
-      description: "How might we encourage more organic interactions between Bumble users through a new geolocation feature?",
-      tags: ["mobile", "interaction-design"],
+      description: "Create organic interactions between BFF & BIZZ users through geolocation.",
+      tags: ["mobile-app", "interaction-design"],
       redirectUrl: "#",
-      // background: "url('../images/)",
+      background: "url('images/b-homepage-cover-desktop.png')",
     },
 
     {
       title: "VR GAME FOR SELF-COMPASSION",
-      description: "How might we empower young adults to manage stress and overcome feelings of inadequacy?",
+      description: "Empower young adults to manage stress and overcome feelings of inadequacy.",
       tags: ["rapid-prototyping", "mental-health"],
       redirectUrl: "#",
       background: "url('images/vr-hero.gif')",
