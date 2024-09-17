@@ -59,7 +59,7 @@ const caseStudies = [
       title: "BUMBLE: CHANCE ENCOUNTERS",
       description: "Create organic interactions between BFF & BIZZ users through geolocation.",
       tags: ["mobile-app", "interaction-design"],
-      redirectUrl: "#",
+      redirectUrl: "chance-encounters.html",
       background: "url('images/b-hp-cover.png')",
     },
 

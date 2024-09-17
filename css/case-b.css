@@ -1,0 +1,164 @@
+.sub-nav {
+    position: fixed;
+    top: 89vh;
+    right: 98vw;
+    list-style-type: none;
+    display: none;
+}
+
+.sub-nav a {
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    color: var(--white-50);
+}
+
+.sub-nav a:hover {
+    color: var(--white);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+
+/* ------------------UNIVERSAL STYLES------------------ */
+
+h4 {
+    margin: 0;
+    margin-bottom: 56px;
+}
+
+h5 {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+a {
+    color: #9ED594;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+p {
+    margin: 0;
+}
+
+.smaller-p {
+    font-size: 18px;
+}
+
+.grey {
+    color: var(--grey);
+}
+
+.dark-grey {
+    background: var(--dark-grey);
+}
+
+.frame {
+    border: 4px solid var(--bg-grey);
+    border-radius: 16px;
+    box-shadow: 8px 8px 0px 0px var(--creativity);
+}
+
+img {
+    border-radius: 16px;
+}
+
+/* ------------------------------------------ HEADER */
+
+.case-header {
+    margin-bottom: 80px;
+}
+
+.case-header .graphic {
+    height: 84vh;
+    width: 100vw;
+    background: url(../images/b-case-cover.png);
+    background-size: 100%;
+}
+
+.case-header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.case-header h1 {
+    margin: 0;
+    padding: 16px 0;
+    /* max-width: 800px; */
+    font-size: 80px;
+    transition-delay: 200ms;
+}
+
+.case-header p {
+    max-width: 1100px;
+    font-size: 32px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+/* ------------------------------------------ OVERVIEW */
+
+.background {
+    background: var(--bg-grey);
+    width: 100vw;
+    height: fit-content;
+    padding: 120px 0;
+}
+
+.no-background {
+    width: 100vw;
+    height: fit-content;
+    padding: 120px 0;
+}
+
+.default-container {
+    max-width: 932px;
+    margin: 0 auto;
+}
+
+.wide-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-1 p {
+    max-width: 365px;
+}
+
+.prototype {
+    margin-top: 120px;
+}
+
+.prototype h5 {
+    margin-bottom: 56px;
+}
+
+.prototype img {
+    height: 600px;
+    margin: 0 24px;
+}
+
+.prototype .content {
+    max-width: 330px;
+}
+
+
+/* ------------------------------------------ REFLECTION */
+
+.reflection img {
+    border-radius: 16px;
+    width: 100%;
+    margin-top: 56px;
+}
