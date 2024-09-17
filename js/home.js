@@ -52,7 +52,7 @@ const caseStudies = [
       description: "Help high school students with future planning through visualization.",
       tags: ["ed-tech", "creativity"],
       redirectUrl: "future-frame.html",
-      background: "url('images/ff-homepage-cover-desktop.png')",
+      background: "url('images/ff-hp-cover-larger.png')",
     },
 
     {
@@ -60,7 +60,7 @@ const caseStudies = [
       description: "Create organic interactions between BFF & BIZZ users through geolocation.",
       tags: ["mobile-app", "interaction-design"],
       redirectUrl: "#",
-      background: "url('images/b-homepage-cover-desktop.png')",
+      background: "url('images/b-hp-cover.png')",
     },
 
     {
@@ -214,9 +214,9 @@ function fade() {
           if (entry.isIntersecting) {
             entry.target.classList.add('show-fade');
           } 
-          // else {
-          //   entry.target.classList.remove('show-fade');
-          // }
+          else {
+            entry.target.classList.remove('show-fade');
+          }
         });
     });
       
@@ -235,9 +235,9 @@ function slide() {
           if (entry.isIntersecting) {
             entry.target.classList.add('show');
           } 
-          // else {
-          //   entry.target.classList.remove('show');
-          // }
+          else {
+            entry.target.classList.remove('show');
+          }
         });
       });
       

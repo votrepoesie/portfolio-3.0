@@ -41,7 +41,7 @@ class SpecialHeader extends HTMLElement {
                         </div>
                     </a>
 
-                    <a href="Li_Resume.pdf" target="_blank">
+                    <a href="Resume.pdf" target="_blank">
                         <div class="nav-btn">
                             <h6>resume</h6>
                         </div>
@@ -210,7 +210,7 @@ let lastScrollY = window.scrollY;
 let windowWidth = window.innerWidth;
 
 document.addEventListener('scroll', () => {
-    hideNavBar();
+    // hideNavBar();
 });
 
 function hideNavBar() {
@@ -246,7 +246,7 @@ class SpecialFooter extends HTMLElement {
         this.innerHTML = `
             <div class="footer">
                 <div class="content">
-                    <h3>DON&apos;T YOU WANT TO MAKE A NEW FRIEND?</h3>
+                    <h3>Don&apos;t you want to make a new friend?</h3>
                     <div class="icons">
                         <a href="mailto: vivian.ruijun.li@gmail.com" target="_blank" id="mail">
                             <svg xmlns="http://www.w3.org/2000/svg" width="58" height="44" viewBox="0 0 58 44" fill="none">

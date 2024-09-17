@@ -46,7 +46,7 @@ img {
 /* ------------------------------------------ HEADER */
 
 .case-header {
-    margin-bottom: 180px;
+    margin-bottom: 80px;
 }
 
 .case-header .graphic {
@@ -112,6 +112,10 @@ img {
     align-items: center;
 }
 
+.section-1 {
+    padding-bottom: 80px;
+}
+
 .logistics .content {
     max-width: 310px;
 }
@@ -133,7 +137,7 @@ img {
 }
 
 .impact-1 {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .impact-1 .graphic img, .impact-2 .graphic img {

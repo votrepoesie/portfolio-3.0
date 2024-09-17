@@ -186,6 +186,7 @@ nav {
     width: 100vw;
     position: fixed;
     z-index: 5;
+    padding-top: 10px;
 }
 
 nav a {
@@ -197,7 +198,7 @@ nav a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-left: 40px;
+    margin-left: 24px;
 }
 
 .logo svg {
@@ -211,7 +212,7 @@ nav a {
     justify-content: space-between;
     align-items: center;
     width: 363px;
-    margin-right: 40px;
+    margin-right: 24px;
 }
 
 .nav-item {
@@ -257,10 +258,9 @@ nav a {
     width: 100vw;
     background: var(--dark-accent);
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    padding: 0 64px;
+    padding: 0 100px;
 }
 
 .footer h3 {
@@ -289,13 +289,11 @@ nav a {
     margin-right: 10px;
 }
 
-.footer .graphic {
-    height: 342px;
+.footer .graphic svg {
     width: 624px;
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
-    padding-top: 35px;
+    margin-right: 200px;
 }
 
 /* ---------------------- homepage ---------------------- */
@@ -312,16 +310,34 @@ nav a {
     width: 1008px;
     height: 740px;
     position: absolute;
-    top: 128px;
-    left: -100px;
+    top: 120px;
+    left: -130px;
 }
 
 .hero .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero .void {
     width: 500px;
+    height: 514px;
+    /* border: 1px solid red; */
+    z-index: 100;
+}
+
+.hero .fill {
     display: flex;
     flex-direction: column;
-    margin-right: 8vw;
-    margin-top: 20vh;
+    margin-left: 200px;
+    /* border: 1px solid red; */
+}
+
+.hero .fill h2 {
+    max-width: 500px;
 }
 
 .bifold {
@@ -330,6 +346,7 @@ nav a {
     align-items: start;
     justify-content: space-between;
     margin-bottom: 40px;
+    max-width: 500px;
 }
 
 .bifold div {
@@ -360,19 +377,19 @@ nav a {
 .case-studies {
     display: flex;
     flex-direction: column;
-    width: 1253px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .case-study {
-    height: 512px;
-    width: 100%;
+    height: 460px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 134px;
     border-radius: 16px;
+    /* border: 1px solid red; */
 }
 
 .case-study .graphic {
@@ -383,8 +400,9 @@ nav a {
 }
 
 .case-study .content {
-    width: 32%;
-    padding-right: 56px;
+    width: 400px;
+    margin-left: 2%;
+    /* border: 1px solid red; */
 }
 
 .case-study .content h4 {
@@ -413,6 +431,8 @@ nav a {
 
 
 /* --------------------------------- test */
+
+
 #blob {
     width: 600px;
     height: 600px;
@@ -495,7 +515,7 @@ nav a {
     }
 
     .homepage p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .tag {
@@ -513,8 +533,10 @@ nav a {
 
     /* --------------- header --------------- */
 
-    .nav {
+    nav {
         width: 100vw;
+        padding-top: 0;
+        height: 70px;
     }
     
     .logo a {
@@ -544,10 +566,19 @@ nav a {
     .my-workspace {
         width: 120vw;
         top: -100px;
+        left: -100px;
+    }
+
+    .hero .void {
+        display: none;
+    }
+
+    .hero .fill {
+        margin-left: 0;
     }
 
     .hero .content {
-        margin-top: 460px;
+        margin-top: 320px;
         width: 90vw;
         align-items: center;
         margin-right: 0;
@@ -613,11 +644,11 @@ nav a {
         width: 90vw;
     }
 
-    .footer .graphic {
+    .footer .graphic svg {
         width: 400px;
         height: 200px;
         padding-top: 0;
-        margin-right: 0;
+        margin-right: 10vw;
         /* display: none; */
     }
 }
