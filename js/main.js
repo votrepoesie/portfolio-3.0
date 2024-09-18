@@ -246,7 +246,7 @@ class SpecialFooter extends HTMLElement {
         this.innerHTML = `
             <div class="footer">
                 <div class="content">
-                    <h3>Don&apos;t you want to make a new friend?</h3>
+                    <h3>My cat wants you to connect with me.</h3>
                     <div class="icons">
                         <a href="mailto: vivian.ruijun.li@gmail.com" target="_blank" id="mail">
                             <svg xmlns="http://www.w3.org/2000/svg" width="58" height="44" viewBox="0 0 58 44" fill="none">
@@ -274,10 +274,10 @@ class SpecialFooter extends HTMLElement {
                         <path d="M355.66 79.6734C356.286 72.5417 348.644 67.6984 343.287 71.8313L267.633 130.197C263.193 133.623 263.682 140.933 268.559 144.024L335.381 186.374C340.258 189.465 346.31 186.301 346.829 180.389L355.66 79.6734Z" fill="#B4A1BD"/>
                         <ellipse cx="192.227" cy="228.909" rx="37.2273" ry="31.9091" fill="white"/>
                         <ellipse cx="302.135" cy="230.091" rx="37.2273" ry="31.9091" fill="white"/>
-                        <circle cx="181.5" cy="228.5" r="19.5" fill="#3F3351"/>
-                        <circle cx="290.5" cy="228.5" r="19.5" fill="#3F3351"/>
-                        <rect x="175" y="216" width="7" height="18" rx="3.5" fill="white"/>
-                        <rect x="281" y="215" width="7" height="18" rx="3.5" fill="white"/>
+                        <circle id="left-eye" cx="181.5" cy="228.5" r="19.5" fill="#3F3351"/>
+                        <circle id="right-eye" cx="290.5" cy="228.5" r="19.5" fill="#3F3351"/>
+                        <rect id="left-eye-highlight" x="175" y="216" width="7" height="18" rx="3.5" fill="white"/>
+                        <rect id="left-eye-highlight" x="281" y="215" width="7" height="18" rx="3.5" fill="white"/>
                         <path d="M251.885 278.543C248.684 282.783 242.316 282.783 239.115 278.543L233.096 270.57C229.116 265.3 232.876 257.75 239.48 257.75L251.52 257.75C258.124 257.75 261.884 265.3 257.904 270.57L251.885 278.543Z" fill="#A46B6B"/>
                         <rect x="200" y="111" width="18" height="51" rx="8" fill="#7B6686"/>
                         <rect x="229" y="108" width="18" height="62" rx="8" fill="#7B6686"/>
@@ -342,5 +342,6 @@ function changeColorBack(svg) {
         easing: 'linear'
     });
 }
+
 
 
