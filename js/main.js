@@ -27,14 +27,14 @@ class SpecialHeader extends HTMLElement {
                 </div>
 
                 <div class="nav-items">
-                    <a href="#">
+                    <a href="work.html">
                         <div class="nav-item">
                             <div class="icon"></div>
                             <h6>work</h6>
                         </div>
                     </a>
 
-                    <a href="#">
+                    <a href="about.html">
                         <div class="nav-item">
                             <div class="icon"></div>
                             <h6>about</h6>
@@ -43,7 +43,7 @@ class SpecialHeader extends HTMLElement {
 
                     <a href="Resume.pdf" target="_blank">
                         <div class="nav-btn">
-                            <h6>resume</h6>
+                            <h6>résumé</h6>
                         </div>
                     </a>
                 </div>
