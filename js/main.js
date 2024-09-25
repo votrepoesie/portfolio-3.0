@@ -41,7 +41,7 @@ class SpecialHeader extends HTMLElement {
                         </div>
                     </a>
 
-                    <a href="Resume.pdf" target="_blank">
+                    <a href="li-resume.pdf" target="_blank">
                         <div class="nav-btn">
                             <h6>resume</h6>
                         </div>
