@@ -44,34 +44,89 @@ function lift() {
 
 lift();
 
-// homepage / case studies / populate 
 
+// -------------------------------------------------------------
+// filtering case studies
+// let filters = document.querySelectorAll('.filter');
+
+// filters.forEach(filter => {
+//   filter.addEventListener('click', () => {
+//     let target = filter.querySelector('h6');
+//     let content = target.innerText;
+
+//     if (content.includes('x')) {
+//       content = content.split(' ')[1];
+//       target.innerText = content;
+//       target.style.color = 'var(--white-50)';
+//       filter.style.borderColor = 'var(--white-50)';
+//       filter.style.background = 'none';
+
+//     } else {
+//       content = 'x ' + content;
+//       target.innerText = content;
+//       target.style.color = 'var(--white)';
+//       filter.style.borderColor = 'var(--white)';
+//       filter.style.background = '#ffffff33';
+//     }
+//   });
+// });
+
+
+
+// homepage / case studies / populate 
 const caseStudies = [
+
+    // {
+    //   title: "BUY MICROGREENS",
+    //   description: "Helping high school students with future planning through visualization.",
+    //   tags: ["web design", "e-commerce"],
+    //   redirectUrl: "future-frame.html",
+    //   // background: "url('images/ff-hp-cover-larger.png')",
+    // },
+
     {
       title: "FUTURE FRAME",
       description: "Helping high school students with future planning through visualization.",
-      tags: ["ed-tech", "creativity"],
+      tags: ["product design", "ed tech"],
       redirectUrl: "future-frame.html",
       background: "url('images/ff-hp-cover-larger.png')",
     },
 
+    // {
+    //   title: "AIRPORT BUDDY",
+    //   description: "Helping travelers with cognitive impairments navigate airports with ease.",
+    //   tags: ["product design", "accessibility"],
+    //   redirectUrl: "airport-buddy.html",
+    //   background: "#",
+    // },
+
     {
       title: "BUMBLE: CHANCE ENCOUNTERS",
       description: "Creating organic interactions between BFF & BIZZ users through geolocation.",
-      tags: ["mobile-app", "interaction-design"],
+      tags: ["product design", "social network"],
       redirectUrl: "chance-encounters.html",
       background: "url('images/b-hp-cover.png')",
     },
 
+    // {
+    //   title: "E-BIKE DASHBOARD",
+    //   description: "Helping travelers with cognitive impairments navigate airports with ease.",
+    //   tags: ["product design", "transportation"],
+    //   redirectUrl: "airport-buddy.html",
+    //   background: "#",
+    // },
+
     {
       title: "VR GAME FOR SELF-COMPASSION",
       description: "Empowering young adults to manage stress and overcome feelings of inadequacy.",
-      tags: ["rapid-prototyping", "mental-health"],
+      tags: ["game design", "mental health"],
       redirectUrl: "vr-game.html",
       background: "url('images/vr-hero.gif')",
     },
 ];
 
+
+// populate 
 const caseStudiesContainer = document.querySelector('.case-studies');
 
 caseStudies.forEach(caseStudy => {
@@ -131,6 +186,8 @@ caseStudies.forEach(caseStudy => {
 });
 
 
+
+// -------------------------------------------------------------
 // blob that follows cursor 
 let blob = document.querySelector('#blob');
 let smallBlob = document.querySelector('#small-blob');
@@ -203,7 +260,7 @@ if (screenSize < 600) {
 };
 
 
-
+// -------------------------------------------------------------
 // scroll animations
 fade();
 
@@ -214,9 +271,9 @@ function fade() {
           if (entry.isIntersecting) {
             entry.target.classList.add('show-fade');
           } 
-          else {
-            entry.target.classList.remove('show-fade');
-          }
+          // else {
+          //   entry.target.classList.remove('show-fade');
+          // }
         });
     });
       
@@ -235,9 +292,9 @@ function slide() {
           if (entry.isIntersecting) {
             entry.target.classList.add('show');
           } 
-          else {
-            entry.target.classList.remove('show');
-          }
+          // else {
+          //   entry.target.classList.remove('show');
+          // }
         });
       });
       
@@ -246,3 +303,6 @@ function slide() {
         observer.observe(element);
     });
 }
+
+
+
