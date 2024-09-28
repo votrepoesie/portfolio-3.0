@@ -1,0 +1,37 @@
+.filters-container {
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 80px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter {
+    padding: 4px 16px;
+    border: 1px solid var(--white-50);
+    border-radius: 16px;
+    margin: 0 8px;
+}
+
+.filter h6 {
+    color: var(--white-50);
+}
+
+.filter:hover {
+    cursor: pointer;
+    /* background: #ffffff33;  */
+    /* transition: 0.2s ease-in-out; */
+}
+
+.filters .design h6 {
+    color: var(--white);
+}
+
+.filters .design {
+    border: 1px solid var(--white);
+    background: #ffffff33;
+}
