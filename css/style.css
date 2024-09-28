@@ -156,6 +156,7 @@ p {
 
 .purple-link {
     color: var(--accent);
+    text-decoration: none;
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
 }
