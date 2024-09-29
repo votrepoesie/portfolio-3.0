@@ -1,37 +1,165 @@
-.filters-container {
-    margin: 0 auto;
-    width: fit-content;
-    margin-bottom: 80px;
+@media only screen and (max-width: 1300px) {
+    .my-workspace {
+        width: 880px;
+    }
+
+    .content .fill {
+        margin-left: 160px;
+    }
 }
 
-.filters {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media only screen and (max-width: 1200px) {
+    .my-workspace {
+        width: 800px;
+    }
+
+    .content .fill {
+        margin-left: 100px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    .homepage p {
+        font-size: 16px;
+    }
 }
 
-.filter {
-    padding: 4px 16px;
-    border: 1px solid var(--white-50);
-    border-radius: 16px;
-    margin: 0 8px;
+@media only screen and (max-width: 1024px) {
+    .my-workspace {
+        top: 20px;
+        width: 700px;
+    }
+
+    .hero {
+        height: 800px;
+    }
+
+    .hero .content {
+        height: 680px;
+    }
+
+    .content .fill {
+        margin-left: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    .homepage p {
+        font-size: 14px;
+    }
 }
 
-.filter h6 {
-    color: var(--white-50);
-}
+@media only screen and (max-width: 834px) {
 
-.filter:hover {
-    cursor: pointer;
-    /* background: #ffffff33;  */
-    /* transition: 0.2s ease-in-out; */
-}
+    nav {
+        height: 70px;
+    }
 
-.filters .design h6 {
-    color: var(--white);
-}
+    .logo svg {
+        width: 40px;
+        height: 40px;
+    }
 
-.filters .design {
-    border: 1px solid var(--white);
-    background: #ffffff33;
+    #blob {
+        display: none;
+    }
+
+    #small-blob {
+        display: none;
+    }
+
+    .my-workspace {
+        width: 540px;
+        top: -30px;
+        left: -120px;
+    }
+
+    .hero {
+        height: 640px;
+    }
+
+    .hero .content {
+        height: 580px;
+        width: 730px;
+        margin: 0 auto;
+    }
+
+    .content .fill {
+        margin-left: 8px;
+    }
+
+    .bifold div {
+        margin-right: 8px;
+    }
+
+    .bifold {
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .homepage p {
+        font-size: 13px;
+    }
+
+    .case-studies {
+        max-width: 744px;
+    }
+
+    .case-study {
+        height: 280px;
+    }
+
+    .case-study .content {
+        margin-left: 32px;
+        width: 300px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    /* footer */
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .footer .content {
+        padding: 0;
+        margin-top: 80px;
+        max-width: 700px;
+        margin-left: 40px;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .footer .graphic svg {
+        width: 400px;
+        margin-right: 0;
+        margin-left: 300px;
+    }
 }
