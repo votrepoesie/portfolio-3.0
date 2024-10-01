@@ -89,7 +89,16 @@ const caseStudies = [
       description: "Helping high school students with future planning through visualization.",
       tags: ["product design", "ed tech"],
       redirectUrl: "future-frame.html",
-      background: "url('images/ff-hp-cover-larger.png')",
+      // background: "url('images/ff-hp-cover-larger.png')",
+      background: "url('images/ff-homepage-cover-desktop.png')",
+    },
+
+    {
+      title: "E-BIKE DASHBOARD",
+      description: "Making sense of semi-autonomous e-bikes for urban commuters.",
+      tags: ["product design", "navigation"],
+      redirectUrl: "#",
+      background: "url('images/bike-homepage-cover.png')",
     },
 
     // {
