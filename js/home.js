@@ -96,8 +96,8 @@ const caseStudies = [
     {
       title: "E-BIKE DASHBOARD",
       description: "Making sense of semi-autonomous e-bikes for urban commuters.",
-      tags: ["product design", "navigation"],
-      redirectUrl: "#",
+      tags: ["product design", "navigation", "autonomy"],
+      redirectUrl: "bike.html",
       background: "url('images/bike-homepage-cover.png')",
     },
 
