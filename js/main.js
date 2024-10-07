@@ -343,5 +343,3 @@ function changeColorBack(svg) {
     });
 }
 
-
-
