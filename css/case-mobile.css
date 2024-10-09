@@ -1,0 +1,110 @@
+@media only screen and (max-width: 600px) {
+
+    nav {
+        width: 100vw;
+        padding-top: 0;
+        height: 70px;
+    }
+
+    .logo a {
+        margin-left: 12px;
+    }
+
+    .logo svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-items {
+        width: 240px;
+        margin-right: 12px;
+    }
+
+    .nav-item .icon {
+        display: none;
+    }
+
+    /* --------------------- */
+
+    .section-titles {
+        font-size: 15px;
+    }
+
+    h4, h5 {
+        font-size: 28px;
+        margin-bottom: 16px;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .frame {
+        box-shadow: none;
+        border: none;
+        border-radius: 8px;
+    }
+
+    /* --------------------- */
+
+    .case-header .graphic {
+        margin-top: 70px;
+        height: 200px;
+    }
+
+    .case-header h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .case-header p {
+        font-size: 20px;
+        margin-top: 8px;
+        font-weight: 300;
+        max-width: 96%;
+    }
+
+    .no-background, .background {
+        padding: 48px 0;
+    }
+
+    .default-container {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .wide-container {
+        max-width: 92%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    /* --------------------- */
+
+    .footer {
+        height: fit-content;
+        flex-direction: column;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .footer h3 {
+        font-size: 38px;
+    }
+
+    .footer .content {
+        padding: 0;
+        margin: 80px auto;
+        max-width: 370px;
+    }
+
+    .footer .graphic svg {
+        width: 390px;
+        height: 190px;
+        padding-top: 0;
+        margin-left: 0;
+    }
+}

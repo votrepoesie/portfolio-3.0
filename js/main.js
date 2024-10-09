@@ -343,3 +343,34 @@ function changeColorBack(svg) {
     });
 }
 
+// nav background becomes black when you scroll down
+// if on homepage, background of nav is transparent
+
+let path = window.location.pathname;
+let page = path.split("/").pop();
+let nav = document.querySelector('nav');
+
+if (screen.width > 600) {
+
+    if (page === 'index.html' || page === '') {
+        nav.style.visibility = 'visible';
+    } else {
+        nav.style.visibility = 'hidden';
+    }
+
+    window.addEventListener('scroll', () => {
+        
+        if (page === 'index.html' || page === '') {
+            nav.style.background = 'none';
+        } else if (window.scrollY > 100) {
+            nav.style.visibility = 'visible';
+            nav.style.transition = '0.3s ease';
+        }
+        // else if (window.scrollY > 100) {
+        //     nav.style.backgroundColor = 'black';
+        //     nav.style.transition = '0.3s ease';
+        // }
+    });
+
+};
+
