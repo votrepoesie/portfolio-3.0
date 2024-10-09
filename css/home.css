@@ -1,3 +1,41 @@
+.fill {
+    border: 1px solid #515151;
+    padding: 24px 40px 40px 40px;
+    /* padding: 40px; */
+    background: rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 32px;
+    box-shadow: 4px 4px 0px 0px #515151;
+}
+
+.circles {
+    display: flex;
+    /* padding-bottom: 8px; */
+    /* border-bottom: 1px solid #9B9B9B; */
+}
+
+.circle {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border-radius: 100px;
+    opacity: 0.8;
+}
+
+.c1 {
+    background: #FF5050;
+}
+
+.c2 {
+    background: #FFD643;
+}
+
+.c3 {
+    background: #79ff57da;
+}
+
+/* --------------------------------------------- */
+
 nav:hover {
     background: none;
 }
@@ -5,20 +43,23 @@ nav:hover {
 @media only screen and (max-width: 1300px) {
     .my-workspace {
         width: 880px;
+        top: 80px;
     }
 
     .content .fill {
-        margin-left: 160px;
+        margin-left: 20px;
+        margin-right: 8px;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     .my-workspace {
         width: 800px;
+        left: -160px;
     }
 
     .content .fill {
-        margin-left: 100px;
+        margin-left: 24px;
     }
 
     h2 {
@@ -49,7 +90,8 @@ nav:hover {
     }
 
     .content .fill {
-        margin-left: 50px;
+        margin-left: 10px;
+        margin-right: 20px;
     }
 
     h2 {
@@ -236,6 +278,15 @@ nav:hover {
     }
 
     /* --------------- hero --------------- */
+
+    .fill {
+        border: none;
+        padding: 0;
+        background: none;
+        backdrop-filter: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
 
     .hero {
         align-items: center;
