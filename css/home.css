@@ -327,8 +327,9 @@ nav:hover {
         width: 90vw;
     }
 
-    .circles {
+    .fill .circles {
         display: none;
+        z-index: -100;
     }
 
     /* --------------- cases --------------- */
