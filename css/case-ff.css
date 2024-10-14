@@ -155,7 +155,7 @@ img {
 @media only screen and (max-width: 600px) {
 
     .logistics {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important;
     }
 
     .logistics .graphic {
@@ -182,10 +182,11 @@ img {
 
     .impact-1 {
         margin-top: 88px;
+        margin-bottom: 48px;
     }
 
     .impact-2 {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important;
     }
 }
 
@@ -381,13 +382,13 @@ img {
         grid-area: 3 / 1 / 4 / 2; 
         width: 100%;
         height: fit-content;
-        margin-top: 88px;
+        margin-top: 40px;
     }
 
     .div3 { 
         grid-area: 2 / 1 / 3 / 2; 
-        margin-left: 24px;
-        margin-top: 50px;
+        margin-top: 40px;
+        justify-content: center;
     }
 
 
@@ -399,9 +400,20 @@ img {
         flex-direction: column;
     }
 
+    .prototype h5 {
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .rapid-prototyping .graphic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .rapid-prototyping .graphic img {
-        width: 100%;
-        margin-bottom: 32px;
+        width: 90%;
+        margin-bottom: 40px;
     }
 
     .rapid-prototyping .content {
@@ -418,10 +430,6 @@ img {
 
     .rapid-prototyping .insight p {
         max-width: 270px;
-    }
-
-    .insight-1 img {
-        margin-bottom: 24px;
     }
 }
 
@@ -454,6 +462,18 @@ img {
 .insight-2 img {
     width: 100%;
     margin-top: 56px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .insight-1 {
+        margin: 40px auto !important;
+    }
+
+    .insight-1 img {
+        width: 100%;
+        margin-bottom: 24px;
+    }
 }
 
 /* --------------------------- DESIGN PROBLEMS / ITERATIONS */
