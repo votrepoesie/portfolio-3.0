@@ -327,6 +327,10 @@ nav:hover {
         width: 90vw;
     }
 
+    .circles {
+        display: none;
+    }
+
     /* --------------- cases --------------- */
 
     .case-studies {
