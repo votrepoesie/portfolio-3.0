@@ -434,7 +434,8 @@ nav a {
 
 .case-study:hover {
     cursor: pointer;
-    transition: 0.2s linear;
+    /* cursor: url(../images/cursor/hover.svg), auto; */
+    transition: 0.5s ease;
 }
 
 .case-study h4:hover {

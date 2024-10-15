@@ -1,7 +1,15 @@
+/* body {
+    cursor: url('../images/cursor/default.svg'), auto;
+} */
+
+.fill h2 {
+    margin-top: 0;
+}
+
 .fill {
     border: 1px solid #515151;
-    padding: 24px 40px 40px 40px;
-    /* padding: 40px; */
+    /* padding: 24px 40px 40px 40px; */
+    padding: 40px;
     background: rgb(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 32px;
@@ -26,6 +34,11 @@
     background: #FF5050;
 }
 
+.c1:hover {
+    background: #FF0000;
+    transition: 0.2s linear;
+}
+
 .c2 {
     background: #FFD643;
 }
@@ -47,8 +60,8 @@ nav:hover {
     }
 
     .content .fill {
-        margin-left: 20px;
-        margin-right: 8px;
+        margin-left: 50px;
+        /* margin-right: 8px; */
     }
 }
 
@@ -59,7 +72,7 @@ nav:hover {
     }
 
     .content .fill {
-        margin-left: 24px;
+        width: 450px;
     }
 
     h2 {
@@ -75,10 +88,39 @@ nav:hover {
     }
 }
 
+@media only screen and (max-width: 1150px) {
+
+    .content .fill {
+        width: 430px;
+    }
+
+}
+
+@media only screen and (max-width: 1150px) {
+    .content .fill {
+        margin-left: 32px;
+        margin-bottom: 20px;
+    }
+
+    .my-workspace {
+        top: 64px;
+        width: 854px;
+        left: -170px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .content .fill {
+        margin-left: 0;
+        margin-right: 16px;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .my-workspace {
-        top: 20px;
         width: 700px;
+        height: 600px;
+        left: -150px;
     }
 
     .hero {
@@ -90,8 +132,9 @@ nav:hover {
     }
 
     .content .fill {
-        margin-left: 10px;
-        margin-right: 20px;
+        margin-left: 0;
+        margin-right: 24px;
+        margin-top: 24px;
     }
 
     h2 {
@@ -107,7 +150,7 @@ nav:hover {
     }
 }
 
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 820px) {
 
     nav {
         height: 70px;
@@ -127,9 +170,9 @@ nav:hover {
     }
 
     .my-workspace {
-        width: 540px;
-        top: -30px;
-        left: -120px;
+        width: 600px;
+        top: 16px;
+        left: -124px;
     }
 
     .hero {
@@ -138,12 +181,14 @@ nav:hover {
 
     .hero .content {
         height: 580px;
-        width: 730px;
+        width: 760px;
         margin: 0 auto;
     }
 
     .content .fill {
-        margin-left: 8px;
+        margin-right: 0;
+        margin-top: 56px;
+        padding: 32px;
     }
 
     .bifold div {
@@ -207,6 +252,12 @@ nav:hover {
         width: 400px;
         margin-right: 0;
         margin-left: 300px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .content .fill {
+        margin-right: 16px;
     }
 }
 
@@ -295,7 +346,7 @@ nav:hover {
 
     .my-workspace {
         width: 120vw;
-        top: -100px;
+        top: -40px;
         left: -100px;
     }
 
@@ -386,5 +437,27 @@ nav:hover {
         padding-top: 0;
         margin-left: 0;
         /* margin-right: 20px; */
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .my-workspace {
+        left: -90px;
+        top: -60px;
+    }
+
+    .hero .content {
+        margin-top: 350px;
+    }
+
+    .content .fill {
+        margin-top: 0;
+        width: 100%;
+        padding: 8px;
+        margin-right: 0;
+    }
+
+    .fill h2 {
+        font-size: 35px;
     }
 }
