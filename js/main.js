@@ -211,6 +211,12 @@ let windowWidth = window.innerWidth;
 
 document.addEventListener('scroll', () => {
     // hideNavBar();
+    header.style.background = 'black';
+    header.style.transition = 'background 0.5s ease';
+
+    if (scrollY === 0) {
+        header.style.background = 'none';
+    }
 });
 
 function hideNavBar() {
@@ -348,29 +354,24 @@ function changeColorBack(svg) {
 
 let path = window.location.pathname;
 let page = path.split("/").pop();
-let nav = document.querySelector('nav');
 
-if (screen.width > 600) {
+// if (screen.width > 800) {
 
-    if (page === 'index.html' || page === '') {
-        nav.style.visibility = 'visible';
-    } else {
-        nav.style.visibility = 'hidden';
-    }
+//     if (page === 'index.html' || page === '') {
+//         nav.style.visibility = 'visible';
+//     } else {
+//         nav.style.visibility = 'hidden';
+//     }
 
-    window.addEventListener('scroll', () => {
+//     window.addEventListener('scroll', () => {
         
-        if (page === 'index.html' || page === '') {
-            nav.style.background = 'none';
-        } else if (window.scrollY > 100) {
-            nav.style.visibility = 'visible';
-            nav.style.transition = '0.3s ease';
-        }
-        // else if (window.scrollY > 100) {
-        //     nav.style.backgroundColor = 'black';
-        //     nav.style.transition = '0.3s ease';
-        // }
-    });
+//         if (page === 'index.html' || page === '') {
+//             nav.style.background = 'none';
+//         } else if (window.scrollY > 100) {
+//             nav.style.visibility = 'visible';
+//             nav.style.transition = '0.3s ease';
+//         }
+//     });
 
-};
+// };
 

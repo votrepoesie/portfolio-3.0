@@ -1,14 +1,13 @@
-/* body {
-    cursor: url('../images/cursor/default.svg'), auto;
-} */
+/* responsive sizing for homepage */
+/* hasn't tested ultrawide but works in theory */
 
 .fill h2 {
     margin-top: 0;
 }
 
 .fill {
+    z-index: 2;
     border: 1px solid #515151;
-    /* padding: 24px 40px 40px 40px; */
     padding: 40px;
     background: rgb(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
@@ -16,59 +15,33 @@
     box-shadow: 4px 4px 0px 0px #515151;
 }
 
-.circles {
-    display: flex;
-    /* padding-bottom: 8px; */
-    /* border-bottom: 1px solid #9B9B9B; */
-}
-
-.circle {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-    border-radius: 100px;
-    opacity: 0.8;
-}
-
-.c1 {
-    background: #FF5050;
-}
-
-.c1:hover {
-    background: #FF0000;
-    transition: 0.2s linear;
-}
-
-.c2 {
-    background: #FFD643;
-}
-
-.c3 {
-    background: #79ff57da;
+.illustration {
+    width: 1008px;
+    position: relative;
+    left: -250px;
+    top: -32px;
+    z-index: 1;
 }
 
 /* --------------------------------------------- */
 
-nav:hover {
-    background: none;
-}
-
 @media only screen and (max-width: 1300px) {
-    .my-workspace {
-        width: 880px;
-        top: 80px;
+
+    .illustration {
+        left: -270px;
+        top: -40px;
     }
 
     .content .fill {
         margin-left: 50px;
-        /* margin-right: 8px; */
     }
 }
 
 @media only screen and (max-width: 1200px) {
-    .my-workspace {
-        width: 800px;
-        left: -160px;
+
+    .illustration {
+        width: 960px;
+        left: -230px;
     }
 
     .content .fill {
@@ -94,18 +67,24 @@ nav:hover {
         width: 430px;
     }
 
+    .illustration {
+        width: 900px;
+    }
+
 }
 
 @media only screen and (max-width: 1150px) {
+
     .content .fill {
         margin-left: 32px;
         margin-bottom: 20px;
     }
+}
 
-    .my-workspace {
-        top: 64px;
-        width: 854px;
-        left: -170px;
+@media only screen and (max-width: 1100px) {
+
+    .case-study:hover {
+        outline: none;
     }
 }
 
@@ -117,10 +96,11 @@ nav:hover {
 }
 
 @media only screen and (max-width: 1024px) {
-    .my-workspace {
-        width: 700px;
-        height: 600px;
-        left: -150px;
+
+    .illustration {
+        top: 0;
+        width: 800px;
+        left: -180px;
     }
 
     .hero {
@@ -150,6 +130,27 @@ nav:hover {
     }
 }
 
+@media only screen and (max-width: 910px) {
+
+    .illustration {
+        width: 700px;
+        left: -150px;
+        top: 20px;
+    }
+
+    .hero .void {
+        width: 380px;
+    }
+
+    .content .fill {
+        margin-top: 40px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+}
+
 @media only screen and (max-width: 820px) {
 
     nav {
@@ -167,12 +168,6 @@ nav:hover {
 
     #small-blob {
         display: none;
-    }
-
-    .my-workspace {
-        width: 600px;
-        top: 16px;
-        left: -124px;
     }
 
     .hero {
@@ -255,9 +250,31 @@ nav:hover {
     }
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 800px) {
+
     .content .fill {
         margin-right: 16px;
+        margin-bottom: 0;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .illustration {
+        width: 580px;
+        top: 80px;
+        left: -130px;
+    }
+
+    .content .void {
+        width: 300px;
+    }
+
+    .content .fill {
+        padding: 24px;
+        width: 350px;
+        margin-right: 24px;
     }
 }
 
@@ -330,7 +347,30 @@ nav:hover {
 
     /* --------------- hero --------------- */
 
-    .fill {
+    .hero {
+        align-items: center;
+        height: 880px;
+        margin-top: 80px;
+    }
+
+    .hero .content {
+        flex-direction: column;
+        width: 90vw;
+        height: 100%;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .hero .void {
+        margin-top: 0;
+        width: 100%;
+        height: 400px;
+    }
+
+    .hero .fill {
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
         border: none;
         padding: 0;
         background: none;
@@ -339,31 +379,10 @@ nav:hover {
         box-shadow: none;
     }
 
-    .hero {
-        align-items: center;
-        height: 900px;
-    }
-
-    .my-workspace {
+    .illustration {
+        top: 0;
+        left: -120px;
         width: 120vw;
-        top: -40px;
-        left: -100px;
-    }
-
-    .hero .void {
-        display: none;
-    }
-
-    .hero .fill {
-        margin-left: 0;
-    }
-
-    .hero .content {
-        margin-top: 380px;
-        width: 90vw;
-        align-items: center;
-        margin-right: 0;
-        margin-left: 0;
     }
 
     .hero .bifold {
@@ -440,14 +459,22 @@ nav:hover {
     }
 }
 
-@media only screen and (max-width: 375px) {
-    .my-workspace {
-        left: -90px;
-        top: -60px;
+@media only screen and (max-width: 390px) {
+
+    .content .void {
+        height: 380px;
     }
 
-    .hero .content {
-        margin-top: 350px;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .content .void {
+        height: 360px;
+    }
+
+    .illustration {
+        left: -110px;
     }
 
     .content .fill {

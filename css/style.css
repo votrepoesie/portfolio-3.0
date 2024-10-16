@@ -184,26 +184,15 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 80px;
     width: 100vw;
     z-index: 5;
     position: fixed;
     top: 0;
 }
 
-nav:hover {
-    background: black;
-    transition: 0.3s ease;
-}
-
 nav a {
-    text-decoration: none;;
-}
-
-@media only screen and (max-width: 600px) {
-    nav {
-        background: black;
-    }
+    text-decoration: none;
 }
 
 .logo a {
@@ -319,14 +308,6 @@ nav a {
     align-items: flex-end;
 }
 
-.my-workspace {
-    width: 1008px;
-    height: 740px;
-    position: absolute;
-    top: 120px;
-    left: -130px;
-}
-
 .hero .content {
     display: flex;
     align-items: center;
@@ -338,15 +319,13 @@ nav a {
 .hero .void {
     width: 500px;
     height: 514px;
-    /* border: 1px solid red; */
-    z-index: 100;
+    /* width: 50%; */
 }
 
 .hero .fill {
     display: flex;
     flex-direction: column;
     margin-left: 200px;
-    /* border: 1px solid red; */
 }
 
 .hero .fill h2 {
@@ -402,7 +381,6 @@ nav a {
     justify-content: space-between;
     margin-bottom: 134px;
     border-radius: 16px;
-    /* border: 1px solid red; */
 }
 
 .case-study .graphic {
@@ -414,8 +392,8 @@ nav a {
 
 .case-study .content {
     width: 400px;
-    margin-left: 2%;
-    /* border: 1px solid red; */
+    /* margin-left: 2%; */
+    padding-right: 32px;
 }
 
 .case-study .content h4 {
@@ -434,8 +412,8 @@ nav a {
 
 .case-study:hover {
     cursor: pointer;
-    /* cursor: url(../images/cursor/hover.svg), auto; */
     transition: 0.5s ease;
+    outline: 2px solid #515151;
 }
 
 .case-study h4:hover {
