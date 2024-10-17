@@ -1,5 +1,11 @@
 @media only screen and (max-width: 600px) {
 
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /* ---------------------------- */
+
     nav {
         width: 100vw;
         padding-top: 0;

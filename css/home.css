@@ -280,6 +280,10 @@
 
 @media only screen and (max-width: 600px) {
 
+    html, body {
+        overflow-x: hidden;
+    }
+    
     /* --------------- fonts --------------- */
 
     h2 {
@@ -425,6 +429,7 @@
     .case-study .content {
         width: 100%;
         padding-right: 0;
+        margin-left: 0;
     }
 
     .case-study .content h4 {
@@ -455,7 +460,6 @@
         height: 190px;
         padding-top: 0;
         margin-left: 0;
-        /* margin-right: 20px; */
     }
 }
 
